@@ -1,0 +1,29 @@
+ <html>
+ <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src='js/sheetsee.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/sss.css">
+  
+  </head>
+  
+  <body>
+  <script type='text/javascript'>    
+  
+  var publicSpreadsheetUrl = '10iALeTXZ-aR7yPffY7v1vjNdUolVQTm5BxVpILj_rf8';
+
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert('Successfully processed!')
+    console.log(data);
+  }
+window.addEventListener('DOMContentLoaded', init)
+
+  </script>
+  </body>
+</html>
